@@ -56,27 +56,37 @@ Subtract the first number from the second number.
 
 Multiply the result by the third number.
 
-Find the remainder of dividing the result by the fourth number.
+Find the remainder of dividing the result by the fourth number. RESPONDED
 
 Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) 
 in other logic comparisons. Rename the variable as appropriate.*/
+
+
+
+
+
 
 //const n1 = 10;
 //const n2 = 15;
 //const n3 = 20;
 //const n4 = 5;
-
+// question 1
 console.log(n1 % 5);
 console.log(n2 % 5);
 console.log(n3 % 5);
 console.log(n4 % 5);
 
+
+//question 2
 if(n1 > n4){
     console.log("The number is bigger!");
 }else{
     console.log("The number is not bigger.");
 }
 
+//question 3
+let result =(((n2 - n1) * n3) / n4)
+console.log(result);
 
 // SECTION 2
 /*You are planning a cross-country road trip!
