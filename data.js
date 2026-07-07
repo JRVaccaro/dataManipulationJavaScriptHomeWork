@@ -39,7 +39,83 @@ console.log(isValid);
 // but it SHOULD NOT be done this way. As programmers,
 // we break things into small, manageable pieces so that
 // they can be better understood, scaled, and maintained.
-const dontDoThis = ((n1 + n2 + n3 + n4) == 50) && 
-  ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
-  !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
-  (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
+    ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) &&
+    !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) &&
+    (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+
+// SECTION 1
+/*Check if all numbers are divisible by 5. Cache the result in a variable. RESPONDED 
+
+Check if the first number is larger than the last. Cache the result in a variable. RESPONDED
+
+Accomplish the following arithmetic chain:
+
+Subtract the first number from the second number.
+
+Multiply the result by the third number.
+
+Find the remainder of dividing the result by the fourth number.
+
+Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) 
+in other logic comparisons. Rename the variable as appropriate.*/
+
+//const n1 = 10;
+//const n2 = 15;
+//const n3 = 20;
+//const n4 = 5;
+
+console.log(n1 % 5);
+console.log(n2 % 5);
+console.log(n3 % 5);
+console.log(n4 % 5);
+
+if(n1 > n4){
+    console.log("The number is bigger!");
+}else{
+    console.log("The number is not bigger.");
+}
+
+
+// SECTION 2
+/*You are planning a cross-country road trip!
+
+The distance of the trip, in total, is 1,500 miles.
+
+Your car’s fuel efficiency is as follows:
+
+At 55 miles per hour, you get 30 miles per gallon.
+
+At 60 miles per hour, you get 28 miles per gallon.
+
+At 75 miles per hour, you get 23 miles per gallon.
+
+You have a fuel budget of $175.
+
+The average cost of fuel is $3 per gallon.
+
+Set up a program to answer the following questions:
+
+How many gallons of fuel will you need for the entire trip?
+
+Will your budget be enough to cover the fuel expense?
+
+How long will the trip take, in hours?
+
+Compare the results when traveling at an average of 55, 60, and 75 miles per hour.
+ Which makes the most sense for the trip?*/
+
+
+
+
+ //SECTION 3
+
+ /* In all of the problems above, there are two tools that would make it much easier to implement the logic we need and to reuse the code to test with different values:
+
+Control flow, which is how we conditionally determine what a program does next. For example, if we exceed our fuel budget, perhaps the program could automatically change the speed it is testing until it finds the optimal speed.
+
+Functions, which are reusable blocks of code, allow us to run pieces of code multiple times without rewriting the code or changing the value of variables in the code itself, like we needed to do above.
+
+We will explore control flow in the next lesson, and functions toward the end of the module. Until then, continue exploring with the variety of operators and data types available in JavaScript!*/
+
