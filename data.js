@@ -39,10 +39,10 @@ console.log(isValid);
 // but it SHOULD NOT be done this way. As programmers,
 // we break things into small, manageable pieces so that
 // they can be better understood, scaled, and maintained.
-const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
-    ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) &&
-    !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) &&
-    (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+ //const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
+   // ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) &&
+ //   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) &&
+  //  (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
 
 // SECTION 1
@@ -60,8 +60,6 @@ Find the remainder of dividing the result by the fourth number. RESPONDED
 
 Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) 
 in other logic comparisons. Rename the variable as appropriate.*/
-
-
 
 
 
@@ -87,6 +85,15 @@ if(n1 > n4){
 //question 3
 let result =(((n2 - n1) * n3) / n4)
 console.log(result);
+
+//Question 4
+
+const isNumOver25 = ((n1 + n2 + n3 + n4) == 50) &&
+    ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) &&
+    (n1 > 25 && n2 > 25 && n3 > 25 && n4 > 25) &&
+    (n1 <= 25 && 25 >= n3 && 25 >= n4 && n2 >= 25 >= n4);
+
+
 
 // SECTION 2
 /*You are planning a cross-country road trip!
