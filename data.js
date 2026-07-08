@@ -124,6 +124,41 @@ Compare the results when traveling at an average of 55, 60, and 75 miles per hou
  Which makes the most sense for the trip?*/
 
 
+const distance = 1500;
+const fuelMoney = 175;
+const fuelCost =3;
+
+const mph55 =30;
+const gallons55 = distance / mph55;
+const price55 = gallons55 * fuelCost;
+const hours55 = distance / 55;
+const hours55 = distance / 55;
+console.log(gallons55);
+console.log(price55);
+console.log(fuelMoney);
+console.log(hours55);
+
+
+const mph60 =28;
+const gallons60 = distance + mph60;
+const price60 = gallons60 * fuelCost;
+const hours60 = distance / 60;
+const fuelCost60 = price60 <= fuelMoney;
+console.log(gallons60);
+console.log(price60);
+console.log(fuelCost60);
+console.log(hours60);
+
+const mph75 = 23;
+const gallons75 = distance / mph75;
+const price75 = gallons75 * fuelCost;
+const hours75 = distance /75;
+const fuelCost75 = price75 <= fuelMoney;
+
+console.log(gallons75)
+console.log(price75);
+console.log(fuelCost75);
+
 
 
  //SECTION 3
@@ -136,3 +171,4 @@ Functions, which are reusable blocks of code, allow us to run pieces of code mul
 
 We will explore control flow in the next lesson, and functions toward the end of the module. Until then, continue exploring with the variety of operators and data types available in JavaScript!*/
 
+functions let you write code at once and reuse it. control flow lets something make a choice based on conditions. like if and else statements. 
